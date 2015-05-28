@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/login" method="post">
+  <input type="text" name="login" placeholder="логин">
+  <input type="password" name="password" placeholder="пароль">
+  <button type="submit">Отправить</button>
+</form>
+<pre>{{wsdl}}</pre>
+{% endblock %}
